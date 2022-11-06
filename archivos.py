@@ -15,10 +15,8 @@ pareja = {}
 list49 = []
 arch1="Primitiva-1985a2012.csv"
 arch2="Primitiva-2013a2022.csv"
-prefijoarch = "./historicos/viejos/deWeb/"
+pathfile = "./historicos/deWeb/"
 
-
- 
 
 
 
@@ -33,8 +31,8 @@ def cargar():
 # 3. Lee los valores de la combinaciones de las copias de los archivos de la web
 # 4. El formato a leer es CSV tal y como se dan en la Web. No se usa Headers.
 def leerorigen():
-    origen1 = prefijoarch + arch1
-    origen2 = prefijoarch + arch2
+    origen1 = pathfile + arch1
+    origen2 = pathfile + arch2
     archivos =  [origen2, origen1]
     listafinal = []
     for file in archivos:
@@ -52,9 +50,9 @@ def leerorigen():
 
 # 1. Esta función toma la lista que contiene todas las combinaciones históricas.
 # 2. Luego las escribe en un archivo que se usará posteriormente
-# 3. El archivo se llama todoSHeader.csv
+# 3. El archivo se llama allNoheader.csv
 def writefinalfile():
-    arch = "./historicos/todoSHeader.csv"
+    arch = "./historicos/allNoheader.csv"
     data=leerorigen()
     with open(arch, 'w+', newline ='') as f:
         writer = csv.writer(f)
@@ -79,7 +77,7 @@ def iniciar():
 
 
 
-# 1. Lee todas las compinaciones historicas: 49C6 de todoSHeader.csv
+# 1. Lee todas las compinaciones historicas: 49C6 de allNoheader.csv
 # 2. De c/u 49C6 extrae 6C2, 6C3, 6C4 y 6C5, los pone en un temp_dict: para contar cuantos hay
 # 2. Guarda las combinaciones de c/u en los archivos con el mismo nombre: "cuantos-r-Hay.csv"
 def quecuantos():
