@@ -1,11 +1,11 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/jfetff/WinPri/README.md/pull/73 -->
 <a name="readme-top"></a>
 <!--
-*** Thanks for checking out the README.md. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
+*** 
+*** 
+*** 
+*** 
+*** 
 -->
 
 
@@ -34,7 +34,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Win 'La Primitiva' using statistics !!</h3>
+  <h3 align="center">Win 'La Primitiva' using statistics/combinatorics !!</h3>
 
   <p align="center">
     The Idea of this Project is to create combinations to win 'La Primitiva' in Spain!
@@ -101,51 +101,62 @@ We will be adding more information in the near future as the project develops. Y
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+The entire project is made usign Python language framework. All the calculation are done using combinatorics. The framework upon which all the execution for this project is done in Visual Studio Code.
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Combinatorics][Vue.js]][Vue-url]
+* [![Visual Code][Visual Studio Code]][Angular-url]
+* [![Python][Python]][Python-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Independent Python files
+
+1. archivos.py
+
+This python file consists of the following functions:
+- a main.py which start the execution of this file
+- iniciar() is the function that runs the main function. This function creates all possible combinations 49C2, 49C3, 49C4, 49C5 y 49C6 and then saving them in corresponding Comb-49CX.csv, where X is 2, 3, 4, 5, o 6. These files are archives in the folder ./templates/. Once this function is executed, we need to run it again since the results are stored in files and there will be no changes done in them.
+
+
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
+This is guide for instructions on setting up this project locally. In order to that you just need to clone this project and then run it using Visual Studio Code.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+The following frameworks are need to build, restore and run this project. All these need to be installed locally.
+
+1. Visual Studio Code
+2. Git
+3. Python
+4. An account in GitHub.com
+
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Below is an example of how you can instruct your audience on installing and setting up your project. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Open Visual Studio Code locally
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/jfetff/WinPri.git
    ```
-3. Install NPM packages
+3. Open a terminal in Visual Studio Code
    ```sh
-   npm install
+
    ```
-4. Enter your API in `config.js`
+4. Run the correspondent python file `archivos.py`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -155,9 +166,9 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+You can find some combinations made using this project. The combinations are located in the folder './tirajes/'. To bet in 'La Primitiva' a person choose 6 numbers from a total of 49. That is called a bet. A bet cost one euro. In one loto ticket is possible to bet up to 8 bets. That is why all the combinations made in this project are put together in groups of 8. The total number of bets that this project creates, depends on how the code is choosing the numbers usign combinatorics.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For a specific example of the combinations created, please refer to the [./tirajes](https://github.com/jfetff/WinPri.git/tirajes)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -212,7 +223,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/jfetff/WinPri](https://github.com/jfetff/WinPri)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -257,12 +268,12 @@ Use this space to list resources you find helpful and would like to give credit 
 [React-url]: https://reactjs.org/
 [Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
 [Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
+[Visual Studio Code]: https://img.shields.io/badge/Visual%20Studio%20Code-Runs%20everywhere-blue
+[Visual Studio Code-url]: https://code.visualstudio.com/
+[Python]: https://img.shields.io/badge/Python-Runs%20everywhere-brightgreen
+[Python-url]: https://www.python.org/
+[Combinatorics]: https://img.shields.io/badge/Combinatorics-Mathematics-blueviolet
+[Combinatorics-url]: https://es.mathigon.org/world/Combinatorics/
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
