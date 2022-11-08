@@ -103,8 +103,8 @@ We will be adding more information in the near future as the project develops. Y
 
 The entire project is made usign Python language framework. All the calculation are done using combinatorics. The framework upon which all the execution for this project is done in Visual Studio Code.
 
-* [![Combinatorics][Vue.js]][Vue-url]
-* [![Visual Code][Visual Studio Code]][Angular-url]
+* [![Combinatorics][Combinatorics]][Combinatorics-url]
+* [![Visual Studio][Visual Studio Code]][Visual Studio Code-url]
 * [![Python][Python]][Python-url]
 
 
