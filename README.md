@@ -162,7 +162,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 You can find some combinations made using this project. The combinations are located in the folder './tirajes/'. To bet in 'La Primitiva' a person choose 6 numbers from a total of 49. That is called a bet. A bet cost one euro. In one loto ticket is possible to bet up to 8 bets. That is why all the combinations made in this project are put together in groups of 8. The total number of bets that this project creates, depends on how the code is choosing the numbers usign combinatorics.
 
-_For a specific example of the combinations created, please refer to the [./tirajes](https://github.com/jfetff/WinPri/tirajes)_
+_For a specific example of the combinations created, please refer to the [./tirajes](https://github.com/jfetjf/WinPri/tree/master/tirajes)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
