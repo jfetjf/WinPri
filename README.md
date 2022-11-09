@@ -118,10 +118,6 @@ This python file consists of the following functions:
 - a main.py which start the execution of this file
 - iniciar() is the function that runs the main function. This function creates all possible combinations 49C2, 49C3, 49C4, 49C5 y 49C6 and then saving them in corresponding Comb-49CX.csv, where X is 2, 3, 4, 5, o 6. These files are archives in the folder ./templates/. Once this function is executed, we need to run it again since the results are stored in files and there will be no changes done in them.
 
-
-
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -152,11 +148,9 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 3. Open a terminal in Visual Studio Code
    ```sh
-
    ```
 4. Run the correspondent python file `archivos.py`
    ```js
-
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -168,7 +162,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 You can find some combinations made using this project. The combinations are located in the folder './tirajes/'. To bet in 'La Primitiva' a person choose 6 numbers from a total of 49. That is called a bet. A bet cost one euro. In one loto ticket is possible to bet up to 8 bets. That is why all the combinations made in this project are put together in groups of 8. The total number of bets that this project creates, depends on how the code is choosing the numbers usign combinatorics.
 
-_For a specific example of the combinations created, please refer to the [./tirajes](https://github.com/jfetff/WinPri.git/tirajes)_
+_For a specific example of the combinations created, please refer to the [./tirajes](https://github.com/jfetff/WinPri/tirajes)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
