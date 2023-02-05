@@ -18,14 +18,6 @@ arch2="Primitiva-2013a2022.csv"
 pathfile = "./historicos/deWeb/"
 
 
-
-
-def cargar():
-    writefinalfile()
-    # quecuantos()
-
-
-
 # 1. Esta función lee las combinaciones históricas de dos archivos y los une para formar
 # 2. una lista que contienes todas las combinaciones históricas, regresando esta lista
 # 3. Lee los valores de la combinaciones de las copias de los archivos de la web
@@ -45,7 +37,6 @@ def leerorigen():
                 listafinal.append(tmplist)
         csv_file.close()
     return listafinal
-
 
 
 # 1. Esta función toma la lista que contiene todas las combinaciones históricas.
@@ -102,10 +93,9 @@ def quecuantos():
 
 
 # Initial Code - Here is where everything starts
-if __name__ == '__main__':
+# if __name__ == '__main__':
     # iniciar()
-    cargar()
     # leerorigen()
     # writefinalfile()
     # quecuantos()
-    print("    That is all folks")
+    # print("    That is all folks")

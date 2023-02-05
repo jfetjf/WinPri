@@ -5,59 +5,40 @@ import archivos
 
 
 def option1():
-    archivos.cargar()
-
+    archivos.writefinalfile()
 
 def option2():
-    archivos.cargar()
+    archivos.iniciar()
 
 
-def mostrar_menu(opciones):
-    print('      Seleccione una opción:\n')
-    for clave in sorted(opciones):
-        print(f' \t{clave}. {opciones[clave][0]}')
+#  Creando el menu y las opciones
+
+def initial_menu():
+    flag = True
+    while flag:  
+        print("\n        MAIN MENU")  
+        print("       1. Load all new combinations so far.")  
+        print("       2. Choose the base of combinations (2 or 3).")  
+        print("       3. Exit")  
+        choice = int(input("       Enter the Choice:"))  
+    
+        if choice == 1:
+            option1()
+        elif choice == 2:
+            option2()  
+        elif choice == 3:  
+            flag = False
+        else:  
+            print("       Oops! Incorrect Choice, try again")
 
 
-def leer_opcion(opciones):
-    while (a := input('\n      Opción: ')) not in opciones:
-        print('      Opción incorrecta, vuelva a intentarlo.\n\n')
-    return a
-
-
-def ejecutar_opcion(opcion, opciones):
-    opciones[opcion][1]()
-
-
-def generar_menu(opciones, opcion_salida):
-    opcion = None
-    while opcion != opcion_salida:
-        mostrar_menu(opciones)
-        opcion = leer_opcion(opciones)
-        ejecutar_opcion(opcion, opciones)
-        print()
-
-
-
-
-#  Creando las opciones   
-while True:  
-    print("\n       MAIN MENU")  
-    print("       1. Load all new combinations so far.")  
-    print("       2. Choose the base of combinations (2 or 3).")  
-    print("       3. Exit")  
-    choice = int(input("       Enter the Choice:"))  
-  
-    if choice == 1:
-        option1()
-    elif choice == 2:
-        option2()  
-    elif choice == 3:  
-        break
-    else:  
-        print("       Oops! Incorrect Choice, try again") 
-
-
-
+# Initial Code - Here is where everything starts
+# if __name__ == '__main__':
+    initial_menu()
+    # leerorigen()
+    # writefinalfile()
+    # quecuantos()
+    print("    That is all folks!!")
 
 
 
@@ -85,8 +66,6 @@ def menu_principal():
         '4': ('   Salir', salir)
     }
 
-    generar_menu(opciones, '4')
-
 
 def accion1():
     print('\n      Has elegido la opción 1\n\n')
@@ -110,3 +89,4 @@ if __name__ == '__main__':
     print("       ***********************************************")   
     print("")   
     menu_principal()
+    print("       That is all folks")
