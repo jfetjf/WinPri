@@ -55,12 +55,11 @@ def writefinalfile():
 # 2. Guarda las combinaciones en los archivos con el mismo nombre: "Comb-49C6.csv"
 # 3. Los archivos como son plantillas se crean solo una vez.
 def iniciar():
-    list49 = []
     for y in range(1,50):
         list49.append(y)
     for x in range(2,7):
         comb = combinations(list49, x)
-        arch = "Comb-49C" + str(x) + ".csv"
+        arch = "./Todoposible/Comb-49C" + str(x) + ".csv"
         textfile = open(arch,"w")
         for element in comb:
             textfile.write(' '.join(str(s) for s in element) + '\n')
