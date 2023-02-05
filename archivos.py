@@ -52,7 +52,7 @@ def leerorigen():
 # 2. Luego las escribe en un archivo que se usará posteriormente
 # 3. El archivo se llama allNoheader.csv
 def writefinalfile():
-    arch = "./historicos/allNoheader.csv"
+    arch = "./historicos/todoSHeader.csv"
     data=leerorigen()
     with open(arch, 'w+', newline ='') as f:
         writer = csv.writer(f)

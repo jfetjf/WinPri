@@ -4,7 +4,12 @@ import archivos
 
 
 
+def option1():
+    archivos.cargar()
 
+
+def option2():
+    archivos.cargar()
 
 
 def mostrar_menu(opciones):
@@ -42,13 +47,12 @@ while True:
     print("       3. Exit")  
     choice = int(input("       Enter the Choice:"))  
   
-    if choice == 1:  
-      
-    elif choice == 2:  
-      
+    if choice == 1:
+        option1()
+    elif choice == 2:
+        option2()  
     elif choice == 3:  
-        break  
-      
+        break
     else:  
         print("       Oops! Incorrect Choice, try again") 
 
@@ -104,5 +108,5 @@ if __name__ == '__main__':
     print("       ***********************************************")  
     print("                WELCOME TO WIN 'LA PRIMITIVA'")  
     print("       ***********************************************")   
-     print("")   
+    print("")   
     menu_principal()
