@@ -85,7 +85,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-The main idea of this project is to create different combinations to win La Primitiva. In order to do that we are using all historic combination played so far. Beside that we are using different statiistics and combinatorics methods.
+The main idea of this project is to create different combinations to play La Primitiva. In order to do that we are using all historic combination played so far. Beside that we are using different statiistics and combinatorics methods.
 
 We will be using different files and folders:
 * Folders: differents folder to order the use within this project
